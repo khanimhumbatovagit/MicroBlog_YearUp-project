@@ -1,0 +1,137 @@
+/* Global CSS for all pages */
+
+* {
+  box-sizing: border-box;
+  /* Sizing helper: See Workbook 1b, page 2-33. */
+
+  /* 
+       Vizualization helper: While styling or debugging your HTML & CSS, 
+       uncomment the rule below to see all the boxes on your page more
+       clearly! (Remove this outline before submitting: users won't 
+       want to see it!)
+    */
+  /* outline: 1px dotted red; */
+}
+
+/* --------------Footer---------------------- */
+.footer #button {
+  width: 35px;
+  height: 35px;
+  border: rgb(172, 8, 222) 12px solid;
+  border-radius: 35px;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.footer #button:hover {
+  width: 35px;
+  height: 35px;
+  border: rgb(172, 8, 222) 12px solid;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  position: relative;
+}
+.footer {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 2em;
+  overflow: hidden;
+  margin: 0 auto;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  z-index: 999;
+}
+.footer:hover {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  height: 10em;
+}
+.footer #container {
+  margin-top: 5px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: #cc9af0;
+}
+.footer #cont {
+  position: relative;
+  top: -45px;
+  right: 190px;
+  width: 150px;
+  height: auto;
+  margin: 0 auto;
+}
+.footer_center {
+  width: 500px;
+  float: left;
+  text-align: center;
+}
+.footer .social {
+  font-family: "Helvetica";
+  font-size: 30px;
+  font-weight: 200;
+  margin-top: 70px;
+  margin-left: 40px;
+}
+
+.copyright {
+  font-family: "Helvetica";
+  font-size: 15px;
+  font-weight: 100;
+  margin-top: 130px;
+  margin-left: 40px;
+  color: black;
+}
+
+.facebook,
+.twitter,
+.instagram {
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  filter: invert(1);
+  transform: scale(0.5);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.facebook {
+  left: 150px;
+}
+
+.twitter {
+  left: 250px;
+}
+
+.instagram {
+  left: 350px;
+}
+
+.instagram:hover {
+  transform: scale(0.5) translateY(-15px);
+}
+
+.twitter:hover {
+  transform: scale(0.5) translateY(-15px);
+}
+
+.facebook:hover {
+  transform: scale(0.5) translateY(-15px);
+}

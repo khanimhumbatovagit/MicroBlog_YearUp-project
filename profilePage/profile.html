@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="profile.css">
+  <link rel="stylesheet" href="/global.css">
+  <script src="/auth.js"></script>
+  <script>
+    if (isLoggedIn() === false) window.location.replace("/");
+  </script>
+</head>
+
+<body>
+
+  <header>
+    <img src="assests/giphy (1).gif" class="logo" id="crown" />
+    <h2 data-text="CODE_QUEENS" class="h2">CODE_QUEENS</h2>
+    <nav>
+      <a href="/posts/index.html" class="post">Post</a>
+
+      <button type="submit" id="logOutBtn" class="logOutbtn btn-primar">
+        <h3 class="h3">Logout</h3>
+      </button>
+    </nav>
+  </header>
+
+
+  <main>
+    <div class="container">
+      <form id="newPostForm">
+        <textarea name="newPostTextArea" id="newPostId" cols="30" rows="10"></textarea><br>
+        <input id="newPostBtn" type="button" value="Create New Post" class="btn btn-primar">
+      </form>
+    </div>
+
+    <div class="card">
+      <img src="/profilePage/assests/iStock-939787416.jpg" class="card-img-top" alt="womanCoding">
+      <br>
+      <hr>
+      <br>
+      <div class="card-body">
+        <h5 class="card-title">About Me</h5><br>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum doloremque velit, sed deleniti
+          dolorum nam nostrum vitae ex harum perspiciatis repellat sit nisi culpa dignissimos amet minus asperiores! A,
+          rerum!</p>
+      </div><br>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item" id="userName">User Name</li>
+        <li class="list-group-item"></li>
+        <li class="list-group-item"></li>
+      </ul><br>
+      <div class="card-body">
+        <a href="#" class="card-link">
+          <h3>Settings</h3>
+        </a>
+
+
+        <a class="menu-item " id="theme">
+          <span><i class="uil uil-palette"></i></span>
+          <h3 class="h3">Theme</h3>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- ----------------THEME CUSTOMIZATION--------------------- -->
+    <div class="customize-theme">
+      <div class="card">
+        <h2>Customize your view</h2>
+        <p class="text-muted">Manage your font size, color, and background</p>
+
+        <!-- ----------------FONT SIZE--------------------- -->
+        <div class="font-size">
+          <h4>Font Size</h4>
+          <div>
+            <h6>Aa</h6>
+            <div class="choose-size">
+              <span class="font-size1"></span>
+              <span class="font-size2 active"></span>
+              <span class="font-size3"></span>
+              <span class="font-size4"></span>
+              <span class="font-size5"></span>
+            </div>
+            <h3>Aa</h3>
+          </div>
+        </div>
+        <!-- ----------------PRIMARY COLORS--------------------- -->
+        <div class="color">
+          <h4>Color</h4>
+          <div class="choose-color">
+            <span class="color-1 active"></span>
+            <span class="color-2"></span>
+            <span class="color-3"></span>
+            <span class="color-4"></span>
+            <span class="color-5"></span>
+          </div>
+        </div>
+        <!-- ----------------BACKGROUND COLORS--------------------- -->
+        <div class="background">
+          <h4>Background</h4>
+          <div class="choose-bg">
+            <div class="bg-1 active">
+              <span></span>
+              <h5 for="big-1">Light Mode</h5>
+            </div>
+            <div class="bg-2">
+              <span></span>
+              <h5 for="big-2">Dim Mode</h5>
+            </div>
+            <div class="bg-3">
+              <span></span>
+              <h5 for="bg-3">Dark Mode</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div id="button"></div>
+      <div id="container">
+        <div id="cont">
+          <div class="footer_center">
+            <div class="social">
+              <img src="https://img.icons8.com/ios/512/facebook-new.png" class="facebook" alt="facebook">
+              <img src="https://img.icons8.com/ios/512/twitter--v1.png" class="twitter" alt="twitter">
+              <img src="https://img.icons8.com/ios/512/instagram-new.png" class="instagram" alt="instagram">
+            </div>
+            <p class="copyright"> &copy; Copyright 2023 - Code_Queens</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="profile.js"></script>
+</body>
+
+</html>

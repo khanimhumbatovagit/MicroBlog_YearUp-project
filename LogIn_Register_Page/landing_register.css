@@ -1,0 +1,422 @@
+/* Landing Page CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  min-height: 1000vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+h2 {
+  position: relative;
+  font-size: 4vw;
+  color: #fff;
+  -webkit-text-stroke: 0.1vw #fff;
+  text-transform: uppercase;
+  left: 120px;
+  top: 80px;
+}
+h2::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: #cc9af0;
+  -webkit-text-stroke: 0vw #000;
+  border-right: 1px #cc9af0;
+  overflow: hidden;
+  animation: animatee 10s linear infinite;
+}
+@keyframes animatee {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+#crown {
+  position: absolute;
+  width: 71px;
+  height: 78px;
+  left: 150px;
+  top: 24px;
+  background: url(LogIn_Register_Page/assets_landing_register/giphy.gif);
+  background-repeat: no-repeat;
+}
+.stars1 {
+  position: absolute;
+  width: 352px;
+  height: 179px;
+  left: -3px;
+  top: 12px;
+
+  background: url(/LogIn_Register_Page/assets_landing_register/urban-stars-2.gif);
+}
+
+.stars2 {
+  position: absolute;
+  width: 352px;
+  height: 179px;
+  left: 231px;
+  top: 34.08px;
+
+  background: url(/LogIn_Register_Page/assets_landing_register/urban-stars-2.gif);
+}
+.stars3 {
+  position: absolute;
+  width: 352px;
+  height: 179px;
+  left: 431px;
+  top: 24.08px;
+
+  background: url(/LogIn_Register_Page/assets_landing_register/urban-stars-2.gif);
+}
+.stars4 {
+  position: absolute;
+  width: 352px;
+  height: 179px;
+  left: 631px;
+  top: 18.08px;
+
+  background: url(/LogIn_Register_Page/assets_landing_register/urban-stars-2.gif);
+}
+.stars5 {
+  position: absolute;
+  width: 352px;
+  height: 179px;
+  left: 831px;
+  top: 10.08px;
+
+  background: url(/LogIn_Register_Page/assets_landing_register/urban-stars-2.gif);
+}
+.stars6 {
+  position: absolute;
+  width: 352px;
+  height: 179px;
+  left: 1031px;
+  top: 10px;
+
+  background: url(/LogIn_Register_Page/assets_landing_register/urban-stars-2.gif);
+}
+.stars7 {
+  position: absolute;
+  width: 352px;
+  height: 179px;
+  left: 1200px;
+  top: 5px;
+
+  background: url(/LogIn_Register_Page/assets_landing_register/urban-stars-2.gif);
+}
+
+#check,
+#icon,
+#theme {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+}
+header {
+  display: flex;
+}
+main {
+  width: 100%;
+  height: 100%;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#check {
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0;
+}
+#icon {
+  z-index: 1;
+  background-image: url(/LogIn_Register_Page/assets_landing_register/icons8-bright-91.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#theme {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#theme #color {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  transition: 2s all linear;
+  bottom: 680px;
+}
+
+#check:checked ~ #icon {
+  background-image: url(/LogIn_Register_Page/assets_landing_register/moooon.png);
+}
+#check:checked ~ #theme #color {
+  background-color: rgb(26, 24, 24);
+  width: calc(100vmax * 3);
+  height: calc(100vmax * 3);
+}
+
+#check:checked ~ header {
+  color: #fff;
+}
+#planet {
+  position: absolute;
+  width: 151px;
+  height: 108px;
+  left: 1380px;
+  top: 14px;
+  background: url(/LogIn_Register_Page/assets_landing_register/bubble-gum-planet-saturn.gif);
+  background-repeat: no-repeat;
+}
+
+.shadow {
+  width: 385px;
+  height: 485px;
+  position: relative;
+  margin: 6% auto;
+  padding: 5px;
+  left: 350px;
+  bottom: 100px;
+}
+.shadow::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000
+  );
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: animate 20s linear infinite;
+}
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  0% {
+    background-position: 0 0;
+  }
+}
+h1 {
+  position: absolute;
+  left: 120px;
+  top: 150px;
+}
+
+.img1 {
+  position: absolute;
+  width: 500px;
+  height: 487px;
+  left: 120px;
+  top: 170px;
+  background: url(/LogIn_Register_Page/assets_landing_register/martina-woman-asking-a-support-worker-a-question.gif);
+  background-repeat: no-repeat;
+}
+.img2 {
+  position: absolute;
+  width: 500px;
+  height: 487px;
+  left: 120px;
+  top: 170px;
+  background: url(/LogIn_Register_Page/assets_landing_register/martina-woman-getting-thumbs-up-and-likes-on-social-media\ -\ Copy.gif);
+  background-repeat: no-repeat;
+}
+.form-box {
+  width: 384px;
+  height: 481px;
+  position: relative;
+  margin: 6% auto;
+  padding: 5px;
+  right: 4.5px;
+  bottom: 25.6px;
+  background: rgb(255, 255, 255);
+  overflow: hidden;
+}
+.button-box {
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px rgb(241, 191, 191);
+  border-radius: 30px;
+}
+.toggle-btn {
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+#btn {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: linear-gradient(to right, #cc9af0, #f85572);
+  border-radius: 30px;
+  transition: 0.5s;
+}
+#btn2 {
+  top: 0;
+  left: 110px;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: linear-gradient(to right, #cc9af0, #f85572);
+  border-radius: 30px;
+  transition: 0.5s;
+}
+.input-group {
+  top: 180px;
+  position: absolute;
+  width: 280px;
+  transition: 0.5s;
+}
+.input-field {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+  caret-color: #fb0094;
+}
+.input-field:hover {
+  background-color: rgba(241, 191, 191, 0.2);
+  border-radius: 30px;
+  border-bottom: none;
+  transition: 0.8s;
+}
+.submit-btn {
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: linear-gradient(to right, #cc9af0, #f85572);
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+}
+
+.submit-btn:hover {
+  transition: 0.5s;
+  transform: scale(1.2);
+}
+.check-box {
+  margin: 30px 10px 30px 0;
+}
+
+span {
+  color: #777;
+  font-size: 13px;
+  bottom: 68px;
+  position: absolute;
+}
+#login {
+  left: 50px;
+}
+#register {
+  left: 450px;
+}
+
+p,
+a {
+  color: #999;
+  font-size: small;
+}
+
+#registerButton {
+  margin: 10px 10px;
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    overflow-y: auto;
+  }
+  #check:checked ~ #theme #color {
+    display: none;
+  }
+  .stars1,
+  .stars2,
+  .stars3,
+  .stars4,
+  .stars5,
+  .stars6,
+  .stars7,
+  #planet {
+    display: none;
+  }
+  .img1,
+  .img2 {
+    position: relative;
+    display: flex;
+    left: 0;
+    width: 350px;
+    height: 487px;
+  }
+
+  .form-box {
+    position: relative;
+  }
+  .shadow {
+    top: 50px;
+    left: auto;
+    width: 344px;
+    height: 441px;
+    position: relative;
+    margin: 6% auto;
+    padding: 0px;
+  }
+  .form-box {
+    left: 0.5px;
+    top: -20px;
+    width: 344px;
+    height: 441px;
+    position: relative;
+    margin: 6% auto;
+    padding: 5px;
+  }
+}
